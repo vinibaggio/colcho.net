@@ -1,0 +1,10 @@
+<h1><%= t '.title' %></h1>
+<p>
+  <%= t '.body', :full_name => @user.full_name %>
+</p>
+<p>
+  <%= t '.confirm_link_html', :link => link_to(@confirmation_link, @confirmation_link) %>
+</p>
+<p>
+  <%= t '.thanks_html', :link => link_to('Colcho.net', root_url) %>
+</p>

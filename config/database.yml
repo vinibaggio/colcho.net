@@ -1,0 +1,19 @@
+development:
+  adapter: postgresql
+  database: colchonet_dev
+  host: localhost
+  username: vinibaggio
+  password:
+  pool: 5
+  timeout: 5000
+  
+
+test:
+  adapter: postgresql
+  database: colchonet_test
+  host: localhost
+  username: vinibaggio
+  password:
+  pool: 5
+  timeout: 5000
+

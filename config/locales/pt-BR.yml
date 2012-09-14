@@ -1,0 +1,107 @@
+pt-BR:
+  users:
+    confirmations:
+      success: Email confirmado com sucesso, obrigado!
+    new:
+      title: Cadastro
+    edit:
+      title: Editar perfil
+    show:
+      edit: 'Editar perfil'
+      title: "Perfil: %{user_name}"
+      location: "Localização: %{location}"
+      bio: "Bio: %{bio}"
+  user_sessions:
+    new:
+      title: 'Login'
+      sign_up: 'Cadastre-se'
+  signup_mailer:
+    confirm_email:
+      subject: 'Colcho.net - Confirme seu email'
+      title: 'Seja bem vindo ao Colcho.net!'
+      body: |
+          Seja bem vindo ao Colcho.net, %{full_name}.
+          O Colcho.net é o lugar ideal para você alugar aquele quarto
+          sobrando na sua casa e ainda conhecer gente do mundo inteiro.
+      confirm_link_html: 'Para você começar a usar o site, acesse o link: %{link}'
+      thanks_html: 'Obrigado por se cadastrar no %{link}.'
+
+  dialogs:
+    destroy: 'Você tem certeza que quer remover?'
+
+  rooms:
+    new:
+      title: 'Cadastro de quarto'
+    edit:
+      title: 'Editando quarto'
+    index:
+      title: 'Quartos disponíveis'
+      search_results: 'Resultados da busca'
+    search:
+      search_for: 'Buscar por...'
+    room:
+      owner_html: '&mdash; %{owner} (%{when})'
+      edit: 'Editar'
+      destroy: 'Remover'
+    review:
+      login_to_review: 'Faça o login para avaliar quartos'
+      stats:
+        one: '(1 avaliação)'
+        other: '(%{count} avaliações)'
+
+  links:
+    show: Exibir
+    back: Voltar
+
+  layout:
+    rooms: Quartos
+    new_room: Cadastre seu quarto!
+    signup: Cadastro
+    signin: Login
+    my_profile: Meu perfil
+    signout: Logout
+
+  general:
+    form_error: Há erros no formulário, por favor verifique.
+
+  flash:
+    notice:
+      signed_in: 'Login efetuado com sucesso!'
+      signed_out: 'Logout efetuado com sucesso. Até logo!'
+      room_created: 'Quarto criado!'
+      room_updated: 'Quarto atualizado!'
+    alert:
+      needs_login: 'Para continuar, você precisa estar logado'
+
+  activerecord:
+    models:
+      room: Quarto
+      user: Usuário
+      review: Avaliação
+    attributes:
+      user:
+        bio: Biografia
+        email: Email
+        full_name: Nome completo
+        location: Localização
+        password: Senha
+        password_confirmation: Confirme sua senha
+      room:
+        description: Descrição
+        location: Localização
+        title: Título
+        picture: Foto
+
+  activemodel:
+    attributes:
+      user_session:
+        email: Email
+        password: Senha
+    errors:
+      messages:
+        invalid_login: 'Usuário ou senha inválidos'
+
+  helpers:
+    submit:
+      user_session:
+        create: 'Entrar'

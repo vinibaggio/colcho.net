@@ -1,0 +1,5 @@
+@mixin shadow($color, $x, $y, $radius) {
+  -moz-box-shadow:    $color $x $y $radius;
+  -webkit-box-shadow: $color $x $y $radius;
+  box-shadow:         $color $x $y $radius;
+}

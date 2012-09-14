@@ -1,0 +1,31 @@
+<% if @room.errors.any? %>
+  <div id="error_explanation">
+    Há erros no formulário, por favor verifique.
+  </div>
+<% end %>
+
+<%= form_for(@room) do |f| %>
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= error_tag @room, :title %>
+  </p>
+  <p>
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+    <%= error_tag @room, :location %>
+  </p>
+  <p>
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+    <%= error_tag @room, :description %>
+  </p>
+  <p>
+    <%= f.label :picture %>
+    <%= f.file_field :picture %>
+    <%= error_tag @room, :picture %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
