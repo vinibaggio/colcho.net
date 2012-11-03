@@ -63,6 +63,6 @@ ActiveRecord::Schema.define(:version => 20120815051946) do
     t.string   "confirmation_token"
   end
 
-  add_index "users", ["email"], :name => "index_users_on_email"
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
 
 end
