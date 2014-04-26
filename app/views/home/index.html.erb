@@ -1,0 +1,6 @@
+<h1>Quartos recém postados</h1>
+<ul>
+  <% @rooms.each do |room| %>
+    <li><%= link_to room.complete_name, room %></li>
+  <% end %>
+</ul>

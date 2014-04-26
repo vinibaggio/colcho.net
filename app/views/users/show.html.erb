@@ -1,0 +1,8 @@
+<h1><%= t '.title', user_name: @user.full_name %></h1>
+
+<ul>
+  <li><%= t '.location', location: @user.location %></li>
+  <li><%= t '.bio', bio: @user.bio %></li>
+</ul>
+
+<%= link_to t('.edit'), edit_user_path(@user) %>

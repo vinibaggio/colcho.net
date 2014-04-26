@@ -1,0 +1,16 @@
+<% if room.can_review? %>
+  <%= form_for room.review_route, remote: true do |f| %>
+    <% room.review_points.each do |point| %>
+      <%= f.radio_button :points, point  %>
+      <%= f.label :points, value: point do %>
+        <%= fa_icon 'star' %>
+      <% end %>
+    <% end %>
+
+    <%= f.submit %>
+  <% end %>
+<% else %>
+  <span class="login_required">
+    <%= t('.login_to_review') %>
+  </span>
+<% end %>

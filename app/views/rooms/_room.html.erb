@@ -1,0 +1,26 @@
+<article class="room">
+  <h2>
+    <%= link_to highlight(room.title, @search_query), room.route %>
+  </h2>
+
+  <%= render partial: 'review', locals: {room: room} %>
+
+  <div class="room-description">
+    <%= link_to(
+          image_tag(room.thumb_url),
+          room.picture_url
+        ) if room.has_picture? %>
+
+    <p><%= highlight(room.description || '', @search_query) %></p>
+  </div>
+
+  <% if belongs_to_user(room) %>
+    <ul>
+      <li><%= link_to t('.edit'), edit_room_path(room.route) %></li>
+      <li><%= link_to t('.destroy'), room_path(room.route),
+        method: :delete, 
+        data: {confirm: t('dialogs.destroy')} %>
+      </li>
+    </ul>
+  <% end %>
+</article>

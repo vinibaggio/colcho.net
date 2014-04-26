@@ -1,0 +1,180 @@
+@import "shadow";
+
+$header-height: 55px;
+$content-width: 700px;
+
+$serif-families: "Pacifico", "Georgia", serif;
+$sans-serif-families: "Helvetica", sans-serif;
+
+$error-text-color: #B94A48;
+$success-text-color: #468847;
+
+* {
+  font-family: $sans-serif-families;
+  font-size: 14px;
+}
+
+body { background-color: #f5f5f5; }
+
+header {
+  @include shadow(#ccc, 0, 3px, 6px);
+
+  border-bottom: 1px solid #686;
+  margin-bottom: 15px;
+
+  #header-wrap {
+    width: $content-width;
+    margin: 0 auto;
+  }
+
+  height: $header-height;
+  background-color: #9ECE71;
+  h1 {
+    float: left;
+    a {
+      color: #333;
+      font-family: $serif-families;
+      font-weight: 400;
+      font-size: 2.5em;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}
+
+header nav {
+  float: right;
+
+  ul {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 55px;
+  }
+
+  li {
+    display: inline-block;
+    line-height: 24px;
+    background-color: #546f3c;
+    padding: 3px 10px;
+
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    vertical-align: middle;
+
+
+    a {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      color: #fff;
+    }
+  }
+}
+
+#content {
+  text-align: left;
+  width: $content-width;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  a, a:visited, a:hover {
+    color: #242;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  ul, form, p {
+    margin: 10px 0;
+  }
+}
+
+form {
+  label {
+    display: block;
+    margin: 5px 0;
+    color: #444;
+  }
+
+  input[type=text], input[type=password], textarea {
+    color: #444;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 200px;
+    outline: 0;
+
+    @include shadow(rgba(0,0,0, 0.1), 0px, 0px, 8px);
+    &:focus {
+      border: 1px solid #c9c9c9;
+    }
+  }
+
+  textarea {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+.field_with_errors {
+  display: inline;
+
+  label { color: $error-text-color; }
+
+  input[type=text], input[type=password], textarea {
+    border: 1px solid rgba(189,74,72, 0.5);
+    @include shadow(rgba(189,74,72, 0.2), 0px, 0px, 8px);
+
+    &:focus { border: 1px solid rgba(189,74,72, 0.6); }
+  }
+}
+
+.error_message {
+  margin-left: 5px;
+  display: inline;
+  color: $error-text-color;
+}
+
+.padded_flash {
+  padding: 10px;
+  margin: 10px 0;
+  font-weight: bold;
+  width: 500px;
+}
+
+#error_explanation {
+  border: 1px solid $error-text-color;
+  color: $error-text-color;
+  background-color: #F2DEDE;
+  @extend .padded_flash;
+}
+
+#notice {
+  color: $success-text-color;
+  border: 1px solid $success-text-color;
+  @extend .padded_flash;
+  background-color: #DFF0D8;
+}
+
+#alert { 
+  color: $error-text-color;
+  border: 1px solid $error-text-color;
+  @extend .padded_flash;
+  background-color: #F2DEDE;
+}
+
+
+.pagination {
+  margin: 20px 0;
+}
+.pagination span {
+  padding: 5px;
+  margin: 0 3px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  @include shadow(#ccc, 0, 3px, 6px);
+}

@@ -1,0 +1,5 @@
+<% if Rails.env.development? %>
+  .translation_missing {
+    border: 3px dashed red;
+  }
+<% end %>

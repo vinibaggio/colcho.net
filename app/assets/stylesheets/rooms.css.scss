@@ -1,0 +1,102 @@
+@import "shadow";
+
+.room {
+  background-color: white;
+  padding: 20px 25px;
+  margin-top: 10px;
+  @include shadow(#ccc, 0, 3px, 6px);
+}
+
+.room h2 {
+  display: inline;
+  a { font-size: 1.3em; }
+}
+
+#content .review form {
+  margin: 0;
+}
+
+#content .review {
+  margin: 0;
+  padding: 0;
+  float: right;
+  border: none;
+  position: relative;
+}
+
+.review label {
+  display: inline;
+}
+
+.review .login_required {
+  font-size: 0.8em;
+  color: #666;
+  font-variant: small-caps;
+}
+
+.review .star {
+  font-size: 18px;
+}
+
+.review .fa-star {
+  color: gold;
+  text-shadow: 1px 1px #999;
+}
+
+.review .fa-star-o {
+  color: #aaa;
+}
+
+.review .fa-check,
+.review .fa-times {
+  position: absolute;
+  right: 0;
+}
+
+.review label i.fa {
+  font-size: 18px;
+  text-shadow: 1px 1px #999;
+  cursor:pointer;
+  color: #ccc;
+}
+
+.review label.toggled i {
+  color: gold;
+}
+
+.review form > input {
+  display:none;
+}
+
+#content .search {
+  float: right;
+  margin: 0;
+  position: relative;
+  &:after {
+    padding: 5px;
+    font-size: 14px;
+    font-family: 'FontAwesome';
+    position: absolute;
+    content: "\f002";
+    color: #bbb;
+    top: 0;
+    right: 0;
+  }
+}
+
+mark {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  background-color: gold;
+}
+.room-description {
+  p, img {
+    float: left; 
+    margin-right: 10px;
+  }
+}
+.room-description + ul {
+  padding-top: 10px;
+  clear: both;
+}
