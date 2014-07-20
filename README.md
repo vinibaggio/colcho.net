@@ -3,7 +3,8 @@ colcho.net
 
 [colcho.net](Colcho.net) é uma aplicação que construímos no livro [Ruby On Rails: Coloque sua aplicação web nos trilho](http://casadocodigo.com.br/products/ruby-on-rails-coloque-sua-aplicacao-web-nos-trilhos):
 
-![Capa do livro](http://cdn.shopify.com/s/files/1/0155/7645/products/rubyonrails-thumb-max_large.jpeg?3144)
+![Capa do
+livro](http://cdn.shopify.com/s/files/1/0155/7645/products/Rails-280_grande_grande_623d251b-85bb-43e8-b534-a75feb94d529_large.png?v=1402942718)
 
 O livro é distribuído pela editora [Casa do Código](http://www.casadocodigo.com.br),
 com outros títulos sobre programação e startups.
