@@ -13,7 +13,7 @@ pt:
 
   flash:
     alert:
-      needs_login: "Você precisa estar lgoado para continuar"
+      needs_login: "Você precisa estar logado para continuar"
     notice:
       signed_in: 'Login efetuado com sucesso!'
       signed_out: 'Logout efetuado com sucesso. Até logo!'
